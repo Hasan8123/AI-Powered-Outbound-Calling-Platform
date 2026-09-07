@@ -25,35 +25,24 @@ A sophisticated Streamlit application that automates outbound sales calls using 
 - Vapi API account
 - Twilio account (for phone numbers)
 
-### Step 1: Clone the Repository
-```bash
-git clone https://github.com/Hasan8123/outbound-calling-app.git
-cd outbound-calling-app
-```
-
-### Step 2: Install Dependencies
+### Step 1: Install Dependencies
 ```bash
 pip install streamlit pandas python-dotenv requests
 ```
 
-### Step 3: Environment Configuration
+### Step 2: Environment Configuration
 Create a `.env` file in the root directory:
 ```env
 VAPI_API_KEY=your_vapi_api_key_here
 TWILIO_ACCOUNT_SID=your_twilio_account_sid
 ```
 
-### Step 4: Prepare Leads CSV
+### Step 3: Prepare Leads CSV
 Create `numbers.csv` with the following columns:
 ```csv
 phone,name,status
 +1234567890,John Doe,pending
 +1987654320,Jane Smith,pending
-```
-
-### Step 5: Run the Application
-```bash
-streamlit run app.py
 ```
 
 ## 💡 Usage Guide
